@@ -1,5 +1,4 @@
 defmodule EstructuraDocente do
-
   def main do
 
   "Docentes_Uniquindio_20240817.csv"
