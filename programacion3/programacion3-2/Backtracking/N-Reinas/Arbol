@@ -1,0 +1,52 @@
+Fila 0
+├── Col 0
+│   ├── Fila 1 → Col 0 ❌ (misma columna)
+│   ├── Fila 1 → Col 1 ❌ (diagonal)
+│   ├── Fila 1 → Col 2 ❌ (diagonal)
+│   └── Fila 1 → Col 3 ✔️
+│        ├── Fila 2 → Col 0 ❌ (misma col)
+│        ├── Fila 2 → Col 1 ❌ (diagonal)
+│        ├── Fila 2 → Col 2 ❌ (diagonal)
+│        └── Fila 2 → Col 3 ❌ (misma col)
+│
+├── Col 1
+│   ├── Fila 1 → Col 0 ❌ (diagonal)
+│   ├── Fila 1 → Col 1 ❌ (misma col)
+│   ├── Fila 1 → Col 2 ❌ (diagonal)
+│   └── Fila 1 → Col 3 ✔️
+│        ├── Fila 2 → Col 0 ✔️
+│        │    ├── Fila 3 → Col 0 ❌ (misma col)
+│        │    ├── Fila 3 → Col 1 ❌ (diagonal)
+│        │    ├── Fila 3 → Col 2 ✔️ ✅ **Solución 1**
+│        │    └── Fila 3 → Col 3 ❌ (diagonal)
+│        └── Fila 2 → Col 1 ❌ (diagonal)
+│
+├── Col 2
+│   ├── Fila 1 → Col 0 ✔️
+│   │    ├── Fila 2 → Col 1 ❌ (diagonal)
+│   │    ├── Fila 2 → Col 2 ❌ (misma col)
+│   │    ├── Fila 2 → Col 3 ✔️
+│   │    │    ├── Fila 3 → Col 1 ✔️ ✅ **Solución 2**
+│   │    │    └── Fila 3 → Col 2 ❌ (diagonal)
+│   │    └── Fila 2 → Col 0 ❌ (misma col)
+│   ├── Fila 1 → Col 1 ❌ (diagonal)
+│   ├── Fila 1 → Col 2 ❌ (misma col)
+│   └── Fila 1 → Col 3 ❌ (diagonal)
+│
+└── Col 3
+    ├── Fila 1 → Col 0 ✔️
+    │    ├── Fila 2 → Col 1 ❌ (diagonal)
+    │    ├── Fila 2 → Col 2 ❌ (diagonal)
+    │    ├── Fila 2 → Col 3 ❌ (misma col)
+    │    └── Fila 2 → Col 0 ❌ (misma col)
+    ├── Fila 1 → Col 1 ❌ (diagonal)
+    ├── Fila 1 → Col 2 ✔️
+    │    ├── Fila 2 → Col 0 ❌ (misma col)
+    │    ├── Fila 2 → Col 1 ✔️
+    │    │    ├── Fila 3 → Col 0 ❌ (misma col)
+    │    │    ├── Fila 3 → Col 1 ❌ (misma col)
+    │    │    ├── Fila 3 → Col 2 ❌ (diagonal)
+    │    │    └── Fila 3 → Col 3 ❌ (misma col)
+    │    └── Fila 2 → Col 2 ❌ (misma col)
+    └── Fila 1 → Col 3 ❌ (misma col)
+
